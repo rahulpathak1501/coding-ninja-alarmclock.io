@@ -1,1 +1,43 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device width, initial-scale=1 minimum-scale=1"
+    />
+    <title>Rounded Clock</title>
+    <link rel="stylesheet" href="alarmclock.css" />
+  </head>
+  <body>
+    <div class="alarm-clock">
+      <div class="clock">
+        <div class="clock-face">
+          <div class="hour-hand"></div>
+          <div class="minute-hand"></div>
+          <div class="second-hand"></div>
+          <div class="center"></div>
+        </div>
+      </div>
+      <div class="set-alarm">
+        <!-- <input type="time" name="" id="time-input" /> -->
+        <div id="time-input">
+          <input type="number" id="hour" min="1" max="12" placeholder="HH" />
+          <span>:</span>
+          <input type="number" id="minute" min="0" max="59" placeholder="MM" />
+          <span>:</span>
+          <input type="number" id="second" min="0" max="59" placeholder="SS" />
+          <select id="ampm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+        <button type="submit" id="submit">Set Alarm</button>
+      </div>
+      <div id="alarm-time"></div>
+    </div>
+
+    <script src="alarmclock.js"></script>
+  </body>
+</html>
